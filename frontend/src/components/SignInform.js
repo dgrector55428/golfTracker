@@ -13,9 +13,6 @@ const SignInform = () => {
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control size="lg" type="email" placeholder="Enter email" />
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone.
-          </Form.Text>
         </Form.Group>
         <Form.Group controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
@@ -24,6 +21,11 @@ const SignInform = () => {
         <Button className="mt-2" variant="primary" type="submit">
           Submit
         </Button>
+        <Form.Text className="text-muted mt-5">
+          <a href="#" style={{ fontSize: "20px", color:"#a9a9a9" }}>
+            Don't have an account?
+          </a>
+        </Form.Text>
       </Form>
     </div>
   );
