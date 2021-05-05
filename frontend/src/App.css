@@ -1,3 +1,7 @@
+/* body {
+  background-color: #2b3e50 !important;
+} */
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.form-wrapper {
+  /* background-color: #2f2f2f; */
+  /* border: 2px solid lightgrey; */
+  padding: 40px;
+  border-radius: 10px;
 }

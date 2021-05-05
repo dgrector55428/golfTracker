@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./components/Header/Header";
+import SignIn from "./components/SignInform";
+import { Container, Row, Col } from "react-bootstrap";
+import golfBg from "./images/golf_background/golf_bg2.png";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <>
+        <Header />
+        <Container fluid>
+          <Row style={{ marginTop: "100px" }}>
+            <Col xs={7} className="">
+              <img
+                src={golfBg}
+                alt=""
+                srcset=""
+                style={{
+                  width: "50vw",
+                  height: "470px",
+                }}
+              />
+            </Col>
+            <Col xs={5}>
+              <div className="form-wrapper">
+                <SignIn />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </>
     </div>
   );
 }
