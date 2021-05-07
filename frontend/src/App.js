@@ -1,35 +1,19 @@
 import "./App.css";
+import { BrowserRouter as Browser, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
-import SignIn from "./components/SignInform";
-import { Container, Row, Col } from "react-bootstrap";
-import golfBg from "./images/golf_background/golf_bg2.png";
+import LoginScreen from "./screens/LoginScreen";
+import RegisterScreen from "./screens/RegisterScreen";
+import InputScoreScreen from "./screens/InputScoreScreen";
 
 function App() {
   return (
     <div className="App">
-      <>
+      <Browser>
         <Header />
-        <Container fluid>
-          <Row style={{ marginTop: "100px" }}>
-            <Col xs={7} className="">
-              <img
-                src={golfBg}
-                alt=""
-                srcset=""
-                style={{
-                  width: "50vw",
-                  height: "470px",
-                }}
-              />
-            </Col>
-            <Col xs={5}>
-              <div className="form-wrapper">
-                <SignIn />
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </>
+        <Route path="/" component={LoginScreen} exact />
+        <Route path="/register" component={RegisterScreen} />
+        <Route path="/add-score" component={InputScoreScreen} />
+      </Browser>
     </div>
   );
 }

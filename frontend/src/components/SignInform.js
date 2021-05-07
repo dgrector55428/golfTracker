@@ -1,10 +1,11 @@
 import React from "react";
 import { Form, Button, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const SignInform = () => {
   return (
     <div>
-      <Row className="mb-4" style={{ borderBottom: "1px solid grey" }}>
+      <Row className="mb-4">
         <Col size="sm" className="mb-3">
           <h1 style={{ color: "#d2d0d0" }}>Log In</h1>
         </Col>
@@ -22,9 +23,9 @@ const SignInform = () => {
           Submit
         </Button>
         <Form.Text className="text-muted mt-5">
-          <a href="#" style={{ fontSize: "20px", color:"#a9a9a9" }}>
+          <Link to="/register" style={{ fontSize: "20px", color: "#a9a9a9" }}>
             Don't have an account?
-          </a>
+          </Link>
         </Form.Text>
       </Form>
     </div>
