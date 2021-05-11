@@ -12,7 +12,7 @@ const LoginScreen = () => {
             <img
               src={golfBg}
               alt=""
-              srcset=""
+              srcSet=""
               style={{
                 width: "50vw",
                 height: "470px",

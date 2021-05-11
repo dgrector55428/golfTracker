@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import colors from "colors";
 import users from "./data/users.js";
-import products from "./data/products.js";
+import states from "./data/states.js";
 import User from "./models/userModel.js";
+import States from "./models/stateModel.js";
 import connectDB from "./config/db.js";
 
 dotenv.config();
@@ -18,9 +18,14 @@ const importData = async () => {
 
     const adminUser = createdUsers[0]._id;
 
-    const sampleProducts = products.map((product) => {
-      return { ...product, user: adminUser };
+    // const sampleProducts = products.map((product) => {
+    //   return { ...product, user: adminUser };
+    // });
+    const stateData = states.map((state) => {
+      return { ...state };
     });
+
+    await States.insertMany(stateData);
 
     console.log("Data Imported!");
     process.exit();
@@ -32,7 +37,9 @@ const importData = async () => {
 
 const destroyData = async () => {
   try {
+    // await Product.deleteMany();
     await User.deleteMany();
+    await States.deleteMany();
 
     console.log("Data Destroyed!");
     process.exit();
