@@ -1,0 +1,9 @@
+#jumboWrapper {
+  padding: 1rem 2rem;
+  background-color: #0e3307;
+}
+
+#bannerTitle {
+  font-size: 60px;
+  letter-spacing: 1.5px;
+}

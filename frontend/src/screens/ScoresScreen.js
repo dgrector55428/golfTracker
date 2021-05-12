@@ -1,11 +1,15 @@
 import React from "react";
-import ScoreCard from "../components/ScoreCard/ScoreCard";
+import ScoreInput from "../components/ScoreInput/ScoreInput";
+import ScoreTable from "../components/ScoreTable/ScoreTable";
+import BannerTitle from "../components/BannerTitle/BannerTitle";
 
 const ScoresScreen = () => {
   return (
-    <div>
-      <ScoreCard />
-    </div>
+    <>
+      <BannerTitle name="Scores" />
+      <ScoreInput />
+      <ScoreTable />
+    </>
   );
 };
 
