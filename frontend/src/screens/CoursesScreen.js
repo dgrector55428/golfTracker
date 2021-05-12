@@ -6,7 +6,7 @@ import BannerTitle from "../components/BannerTitle/BannerTitle";
 const Courses = () => {
   return (
     <div>
-      <BannerTitle name="Courses" />
+      <BannerTitle name="Courses" color="#087a98" />
       <CourseInput />
       <CourseTable />
     </div>

@@ -6,7 +6,7 @@ import BannerTitle from "../components/BannerTitle/BannerTitle";
 const ScoresScreen = () => {
   return (
     <>
-      <BannerTitle name="Scores" />
+      <BannerTitle name="Scores" color="#053163" text="#808891" />
       <ScoreInput />
       <ScoreTable />
     </>
