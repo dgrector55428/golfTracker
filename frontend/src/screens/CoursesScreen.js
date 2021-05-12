@@ -2,11 +2,11 @@ import React from "react";
 import CourseInput from "../components/CoursesForm/CoursesForm";
 import CourseTable from "../components/CourseTable/CourseTable";
 import BannerTitle from "../components/BannerTitle/BannerTitle";
+import "./screens.css";
 
 const Courses = () => {
   return (
-    <div>
-      <BannerTitle name="Courses" color="#087a98" />
+    <div id="divWrapper">
       <CourseInput />
       <CourseTable />
     </div>

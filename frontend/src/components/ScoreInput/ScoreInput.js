@@ -1,11 +1,17 @@
 import React from "react";
 import { Row, Col, Form, Button, Table } from "react-bootstrap";
 import "./ScoreInput.css";
+import BannerTitle from "../BannerTitle/BannerTitle";
 
 const ScoreInput = () => {
   return (
     <div className="d-flex justify-content-center courseForm">
       <Form style={{ width: "70%" }}>
+        <Form.Row>
+          <Form.Group as={Col}>
+            <BannerTitle title="Scores" />
+          </Form.Group>
+        </Form.Row>
         <Form.Row>
           <Form.Group as={Col} controlId="parInputWrapper">
             <Form.Label className="d-flex justify-content-start">

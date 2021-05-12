@@ -1,15 +1,14 @@
 import React from "react";
 import ScoreInput from "../components/ScoreInput/ScoreInput";
 import ScoreTable from "../components/ScoreTable/ScoreTable";
-import BannerTitle from "../components/BannerTitle/BannerTitle";
+import "./screens.css";
 
 const ScoresScreen = () => {
   return (
-    <>
-      <BannerTitle name="Scores" color="#053163" text="#808891" />
+    <div id="divWrapper">
       <ScoreInput />
       <ScoreTable />
-    </>
+    </div>
   );
 };
 

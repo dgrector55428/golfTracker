@@ -1,9 +1,9 @@
-.courseForm {
-  margin-top: 50px;
-}
-
 .courseForm button {
   width: 200px;
   font-weight: bold;
   letter-spacing: 1.2px;
+}
+
+#pageTitle {
+  font-size: 60px;
 }

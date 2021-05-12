@@ -1,9 +1,10 @@
 import React from "react";
 import { Table } from "react-bootstrap";
+import "./ScoreTable.css";
 
 const ScoreTable = () => {
   return (
-    <div className="d-flex justify-content-center">
+    <div className="d-flex justify-content-center" id="scoreTblWrapper">
       <Table
         striped
         bordered

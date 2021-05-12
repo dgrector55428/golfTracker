@@ -1,11 +1,17 @@
 import React from "react";
 import { Row, Col, Form, Button, Table } from "react-bootstrap";
 import "./CoursesForm.css";
+import BannerTitle from "../BannerTitle/BannerTitle";
 
 const CoursesForm = () => {
   return (
     <div className="d-flex justify-content-center courseForm">
       <Form style={{ width: "50%" }}>
+        <Form.Row>
+          <Form.Group as={Col}>
+            <BannerTitle title="Courses" />
+          </Form.Group>
+        </Form.Row>
         <Form.Row>
           <Form.Group controlId="formCourseName" style={{ width: "100%" }}>
             <Form.Label className="d-flex justify-content-start">
@@ -42,7 +48,11 @@ const CoursesForm = () => {
             <Form.Label className="d-flex justify-content-start">
               Notes
             </Form.Label>
-            <Form.Control as="textarea" rows={3} />
+            <Form.Control
+              as="textarea"
+              rows={3}
+              placeholder="Beautiful course!"
+            />
           </Form.Group>
         </Form.Row>
         <Button variant="info" type="submit">
